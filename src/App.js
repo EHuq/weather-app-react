@@ -18,7 +18,10 @@ function App() {
           setWeather(result);
           setQuery('');
         });
+
     }
+
+
   }
 
   const dateBuilder = (d) => {
@@ -56,6 +59,7 @@ function App() {
 
 
 
+
   return (
     <div
       className={(typeof weather.main != 'undefined' ?
@@ -71,6 +75,7 @@ function App() {
             onChange={event => setQuery(event.target.value)}
           />
         </div>
+
         {(typeof weather.main != 'undefined' ? (
           <div>
             <div className="location-box">
