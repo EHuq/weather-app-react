@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.app {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./images/warm-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  min-height: 100vh;
+  padding: 25px;
+}
+
+
+.cold {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./images/cold-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s;
+  min-height: 100vh;
+  padding: 25px;
+}
+
+.searchbar-container {
+  width: 100%;
+  margin-bottom: 0 0 75px;
+}
+
+.searchbar-container .searchbar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  color: #313131;
+  font-size: 20px;
+  appearance: none;
+  border: none;
+  background: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.searchbar-container .searchbar:focus {
+  outline: none;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 1);
+}
+
+.weather-wrap {
+  max-width: 400px;
+  margin: auto;
+}
+
+.location-box .location {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.location-box .date {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.4);
+  /* font-style: italic; */
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temperature {
+  display: inline-block;
+  padding: 10px 25px;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 200, 200, 0.25);
+  border-radius: 16px;
+  margin: 30px 0px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.weather-box .weather {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 800;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.error-wrap {
+  text-align: center;
+}
+
+.error {
+  display: inline-block;
+  padding: 10px 25px;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  margin: 30px 0px;
+}
